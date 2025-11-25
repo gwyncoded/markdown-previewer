@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Markdown Previewer</title>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css' />
+	<link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="master-div">
+      <div class="container-fluid" id="master-container">
+        <div class="row" id="title-row">
+          <div class="col text-center"><h1>Markdown Previewer</h1></div>
+        </div>
+        <div class="row">
+          <div class="col-6 d-flex flex-column" id="editor-column">
+            <div class="row subtitle">
+              <h2 class="text-center">Editor</h2>
+            </div>
+            <textarea id="editor" class="flex-grow-1"></textarea>
+          </div>
+          <div class="col-6" id="preview-column">
+            <div class="row subtitle">
+              <h2 class="text-center">Preview</h2>
+            </div>
+            <div id="preview"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/15.0.12/marked.min.js" integrity="sha512-rCQgmUulW6f6QegOvTntKKb5IAoxTpGVCdWqYjkXEpzAns6XUFs8NKVqWe+KQpctp/EoRSFSuykVputqknLYMg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script  src="scripts.js"></script>
+  </body>
+</html>
